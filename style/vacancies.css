@@ -63,9 +63,6 @@
                 padding: 30px 0;
             }
             
-            .slider__pic {
-                height: 120px;
-            }
             
             .slide-title {
                 font-size: 18px;
@@ -80,4 +77,5 @@
             .read-more {
                 margin-top: 10px;
             }
+
         }
