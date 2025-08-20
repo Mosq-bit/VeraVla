@@ -31,10 +31,6 @@
 
 }
 
-.footer__pic {}
-
-
-
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -184,3 +180,4 @@ a.footer__mail {
     }
 
 }
+
