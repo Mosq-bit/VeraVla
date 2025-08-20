@@ -95,6 +95,11 @@
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.5;
 }
+.slide-text p {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 a.read-more {
     margin-top: 20px;
@@ -235,4 +240,5 @@ box-shadow: 0 7px 20px -7px #00e0ff;;
     .slider-nav{
         display: none;
     }
+
 }
