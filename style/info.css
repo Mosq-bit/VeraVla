@@ -22,14 +22,14 @@
     text-transform: uppercase;
     color: var(--blue);
     line-height: 1.2;
-
-    span {
-        
-    }
 }
 
 .title span{
 color: var(--white);
+}
+
+.info__title{
+    max-width: 776px;
 }
 
 
@@ -154,3 +154,4 @@ color: var(--white);
     }
 
 }
+
