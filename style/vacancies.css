@@ -51,6 +51,14 @@
         padding: 40px 20px;
     }
 }
+@media (max-width:452px){
+    .slide__wrapper-content {
+        justify-content: space-between;
+    }
+    .vacancies-text__points{
+        display: none;
+    }
+}
 @media (max-width:412px) {
     .vacancies-text__points{
         display: none;
@@ -81,5 +89,6 @@
             }
 
         }
+
 
 
