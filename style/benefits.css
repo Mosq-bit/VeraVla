@@ -1,6 +1,6 @@
 .benefits {
     padding: 104px 0 122px;
-    background: url(/assets/benefits__bg\ .png);
+    background: url(/VeraVla/assets/benefits__bg\ .png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,4 +44,5 @@
     .benefits__item{
         margin-bottom: 50px;
     }
+
 }
