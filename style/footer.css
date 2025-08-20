@@ -168,13 +168,6 @@ a.footer__mail {
         width: 100%;
         /* растянуть линию на всю ширину */
     }
-
-    /* Можно изменить размеры иконок */
-    .footer__icon {
-        width: 24px;
-        height: 24px;
-    }
-
     /* Текстовые элементы */
     a.footer__mail {
         font-size: 16px;
@@ -189,4 +182,5 @@ a.footer__mail {
     .footer__btn p {
         display: none;
     }
+
 }
