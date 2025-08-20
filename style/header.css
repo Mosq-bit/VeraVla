@@ -1,5 +1,5 @@
 .header {
-    background-image: url(/VeraVla/assets/bg.png);
+    background-image: url("/VeraVla/assets/bg.png");
 
     background-position: top center;
     background-repeat: no-repeat;
@@ -240,3 +240,4 @@
     }
 
 }
+
