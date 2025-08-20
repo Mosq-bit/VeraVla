@@ -67,7 +67,7 @@ color: var(--white);
 
 .info__card::before {
     position: absolute;
-    content: url(/assets/befor.png);
+    content: url(/VeraVla/assets/befor.png);
     bottom: -20px;
     left: 10%;
     transition: all 0.3s ease;
@@ -152,4 +152,5 @@ color: var(--white);
     .info__card {
         padding: 25px 20px;
     }
+
 }
