@@ -68,7 +68,7 @@
 }
 
 .ai__item::before {
-    content: url(/assets/ai__icon.png);
+    content: url(/VeraVla/assets/ai__icon.png);
     padding-right: 19px;
     transition: transform 0.3s ease;
 }
@@ -179,5 +179,6 @@
     }
 
 }
+
 
 
