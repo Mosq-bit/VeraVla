@@ -1,6 +1,6 @@
 .important {
     padding: 104px 0 132px;
-    background: url(/assets/importan-bg.png);
+    background: url(/VeraVla/assets/importan-bg.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,4 +184,5 @@
     .important__content {
         font-size: 15px;
     }
+
 }
