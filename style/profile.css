@@ -1,6 +1,6 @@
 .profile {
     padding: 100px 0 110px;
-    background-image: url(/assets/specialist.png);
+    background-image: url(/VeraVla/assets/specialist.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,4 +124,5 @@
     .profile__text {
         font-size: 13px;
     }
+
 }
