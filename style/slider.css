@@ -1,0 +1,238 @@
+.slider {
+    padding: 60px 40px;
+
+    background: linear-gradient(313deg, #022335 0%, #043a41 100%);
+}
+
+.slider__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.slider__title {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.title__link {
+    padding: 18px 20px;
+    border: 1px solid var(--light-blue);
+    border-radius: 9px;
+    font-weight: 750;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--blue);
+    transition: all 0.4s ease-in;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.title__link:hover {
+    box-shadow: 0 7px 20px -7px var(--light-blue);
+    text-decoration: none;
+}
+
+.announcements-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+    padding: 10px 5px;
+}
+
+.slide {
+    flex: 0 0 calc(33.333% - 14px);
+    /* Правильный расчет с учетом gap */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.slide:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.size-info {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+}
+
+.slider__pic {
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.slide-title {
+    margin-top: 10px;
+    font-weight: 750;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.slide-text {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+a.read-more {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue);
+    text-decoration: underline;
+    align-self: flex-start;
+}
+
+.slider-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: var(--blue);
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background:#08262b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-nav:hover {
+    background:  linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+box-shadow: 0 7px 20px -7px #00e0ff;;
+}
+
+.prev {
+    left: 1%;
+    top: 26%;
+}
+
+.next {
+    right: 2%;
+    top: 26%;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .slider {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slide {
+        flex: 0 0 calc(50% - 10px);
+        min-width: calc(50% - 10px);
+        padding: 15px;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .slider__info {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .title__link {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        padding: 40px 20px;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
+    .slider-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .prev {
+        left: -15px;
+    }
+
+    .next {
+        right: -15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider {
+        padding: 30px 15px;
+    }
+
+    .slider__title {
+        font-size: 26px;
+    }
+
+    .slide {
+        padding: 15px;
+    }
+
+
+    .slide-title {
+        font-size: 16px;
+    }
+
+    .slide-text {
+        font-size: 14px;
+    }
+    .slider-nav{
+        display: none;
+    }
+}

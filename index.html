@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>VeraVla edu!</title>
+</head>
+
+
+<body>
+  <header class="header" id="main-header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__top">
+          <img class="header__logo" src="/assets/logo.png" alt="">
+          <a class="header__phone" href="tel:+821075269192">
+            <svg class="phone__icon">
+              <use href="sprites.svg#header__phone"></use>
+            </svg>+ 82 (10) 7526-9192</a>
+        </div>
+
+        <div class="header__consultation js-open-modal">
+          <img src="/assets/hellp.png" alt="" class="header__consultation-png">
+          <p>Бесплатная консультация</p>
+        </div>
+        
+        <div class="modal" id="modal">
+          <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Записаться <span>на ознакомительный вебинар</span></h2>
+            <form class="modal__form">
+              <label for="name">Ваше ФИО </label>
+              <input type="name" placeholder="" required>
+              <label for="tel">Номер телефона </label>
+              <input type="tel" placeholder="" required>
+              <label for="email">Ваш email </label>
+              <input type="email" placeholder="">
+              <label for="text">Веберите дату и время вебинара:</label>
+              <input type="text" placeholder="" required>
+              <button type="submit" class="modal__submit">Записаться</button>
+            </form>
+          </div>
+        </div>
+        <div class="header__inner">
+          <p class="header__subtitle">
+            Добро пожаловать в онлайн школу
+          </p>
+          <h1 class="header__title">VeraVla edu!</h1>
+          <p class="header__text">
+            Переквалифицируйся в разработчика искусственного интеллекта и получи высокооплачиваемую работу
+          </p>
+          <div class="header__info">
+            <img src="/assets/header__pic-1.png" alt="" class="header__info-pic">
+            <div class="header__info-content">
+              <p class="header__info-title">
+                Мы обучаем с гарантией!
+              </p>
+              <p class="header__info-text">
+                Первый месяц действует гарантия 100% возврата
+                денег, если тебя не устроят наши курсы
+              </p>
+            </div>
+          </div>
+          <div class="header__btn-wrapper">
+            <a href="#" class="header__btn">Записаться на ознакомительный вебинар</a>
+            <button class="scroll-down-btn" onclick="scrollDown()">
+              <p>Листайте вниз</p>
+
+              <img src="/assets/down.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="info">
+      <div class="container">
+        <div class="info__wrapper">
+          <h2 class="title">
+            7 причин
+            <span>почему <br> именно мы?</span>
+          </h2>
+          <div class="info__cards">
+            <div class="info__cards-top">
+
+              <div class="info__card top">
+                <img src="/assets/info-pic.svg" alt="" class="info__card-pic">
+                <p class="info__text">Ты станешь востребованным специалистом в области искусственного интеллекта</p>
+              </div>
+              <div class="info__card top">
+                <img src="/assets/info-pic-2.svg" alt="" class="info__card-pic">
+                <p class="info__text">Будешь создавать свои модели искусственного интеллекта на языке программирования
+                  Python</p>
+              </div>
+              <div class="info__card top">
+                <img src="/assets/info-pic-3.svg" alt="" class="info__card-pic">
+                <p class="info__text">Сумеешь создавать программы, связанные
+                  с компьютерным зрением и нейронными сетями.</p>
+              </div>
+              <div class="info__card top">
+                <img src="/assets/info-pic-4.svg" alt="" class="info__card-pic">
+                <p class="info__text">Мы обучаем только тому, что тебе пригодится
+                  во время работы!</p>
+              </div>
+            </div>
+            <div class="info__cards-bottom">
+              <div class="info__card">
+                <img src="/assets/info-pic-5.svg" alt="" class="info__card-pic">
+                <p class="info__text">Ты найдешь единомышленников,
+                  с которыми сможешь создавать свои проекты</p>
+              </div>
+              <div class="info__card">
+                <img src="/assets/info-pic-6.svg" alt="" class="info__card-pic">
+                <p class="info__text">Мы создаём сообщество профессионалов, таких же как и мы, жаждущих развивать и
+                  изменять этот мир к лучшему с помощью IT технологий</p>
+              </div>
+              <div class="info__card">
+                <img src="/assets/info-pic-7.svg" alt="" class="info__card-pic">
+                <p class="info__text">После успешного завершения курса, мы поможем тебе трудоустроиться
+                  в Южнокорейские IT компании!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ai__section">
+      <div class="container">
+        <div class="ai__content">
+          <h2 class="ai__title">Искусственный интеллект <span>x- это круто? </span></h2>
+          <ul class="ai__list">
+            <li class="ai__item">На данный момент только в Южной Корее ищут 10,000 специалистов в области AI!</li>
+            <li class="ai__item">Младшие разработчики искусственного интеллекта без опыта работы могут получать в Южной
+              Корее 60,000,000 вон (51,000$) в год. Специалист со средним стажем работы может получать уже около
+              100,000,000 вон (85,000$) в год.</li>
+            <li class="ai__item">В США уровень зарплат ещё выше! Младший специалист без опыта работы получает в среднем
+              93,000$ в год. А инженер со средним стажем работы получает уже больше 140,000$ в год!</li>
+            <li class="ai__item">А самое вкусное то, что твоя зарплата будет расти вместе
+              с твоими навыками. Стаж не так важен.</li>
+          </ul>
+          <button class="btn js-open-modal">Записаться на ознакомительный вебинар</button>
+        </div>
+      </div>
+    </section>
+    <section class="important">
+      <div class="container">
+        <div class="important__wrapper">
+          <h2 class="title important__title">
+            Важно <span>понимать что</span>
+          </h2>
+          <div class="important__cards">
+            <div class="important__card">
+              <img src="/assets/1.png" alt="" class="important__pic">
+              <p class="important__content">
+                Искусственный интеллект -
+                это не одна дисциплина, как думают многие, а совокупность различных между собой направлений.
+              </p>
+            </div>
+            <div class="important__card">
+              <img src="/assets/importan-2.png" alt="" class="important__pic">
+              <p class="important__content">
+                Подготовка реально хороших специалистов требует времени, краткосрочные курсы эффекта не дают.
+              </p>
+            </div>
+            <div class="important__card">
+              <p class="important__content">
+                Большинство менторов никогда не работали над реальными проектами.
+                Они изучали все по видеоурокам и книжкам,
+                и преподают без практики, что очень печально.
+              </p>
+              <img src="/assets/importan-3.png" alt="" class="important__pic">
+            </div>
+            <div class="important__card">
+              <p class="important__content">
+                На многих курсах
+                преподают готовые/идеальные кейсы
+                без всяких сложностей, поэтому студенты после таких курсов не могут
+                решать реальные задачи
+                на работе.
+              </p>
+              <img src="/assets/importan-4.png" alt="" class="important__pic">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__wrapper">
+          <h2 class="title benefits__title">Почему именно наш курс? <span>Все просто!</span></h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__block"> <img src="/assets/benefits-icon.png" alt="">
+                <p class="benefits__text">Объясняем сложные вещи простым и доходчивым языком.</p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__block"> <img src="/assets/benefits-icon.png" alt="">
+                <p class="benefits__text">Обучаем не просто языку программирования, или одной какой-то дисциплине, мы
+                  обучаем полностью всей специальности.</p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__block"> <img src="/assets/benefits-icon.png" alt="">
+                <p class="benefits__text">Ознакомляем с содержанием урока только в режиме реального времени. Ты сможешь
+                  сразу задать вопрос и тут же получить ответы. Мы всегда будем рядом. </p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__block"> <img src="/assets/benefits-icon.png" alt="">
+                <p class="benefits__text">Обучение ведет ведущий и действующий специалист в области искусственного
+                  интеллекта в Южной Корее.</p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__block"> <img src="/assets/benefits-icon.png" alt="">
+                <p class="benefits__text">Обучение проходит в группе по 15 человек, которая внутри делится на 3 команды,
+                  и каждая команда выполняет собственный проект. Таким образом, студенты смогут прочувствовать тонкости
+                  командной разработки, и уже на этапе обучения окунуться в рабочую атмосферу AI специалиста.</p>
+              </div>
+            </li>
+          </ul>
+          <button class="btn js-open-modal">Записаться на ознакомительный вебинар</button>
+        </div>
+      </div>
+    </section>
+    <section class="learning-program">
+      <div class="container">
+        <div class="learning-program__wrapper">
+          <h2 class="title">
+            Что я узнаю <span>из этих курсов?</span>
+          </h2>
+          <p class="subtitle">Полностью весь курс состоит из 3 частей</p>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <div class="accordion__header-inner">
+                  <svg class="accordion__icon-arrow">
+                    <use href="sprites.svg#accordion__arow"></use>
+                  </svg>
+                  <p class="level-badge">
+                    AI - Junior Level.
+                    <span class="duration">Продолжительность 1 год</span>
+                  </p>
+                </div>
+                <div class="flip__container">
+                  <svg class="accordion__icon">
+                    <use href="sprites.svg#accordion__btn"></use>
+                  </svg>
+                </div>
+              </button>
+              <div class="accordion-content">
+                <div class="module">
+                  <h3 class="module-title"> <span>1</span> Введение</h3>
+                  <p class="module-description">
+                    Знакомство с историей успеха, анализ целесообразности изучения ИИ, ключевые уроки от практикующих
+                    специалистов.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"> <span>2</span> Введение в программирование</h3>
+                  <p class="module-description">
+                    Эта секция начинается с объяснения понятий проблемы, сути и целей искусственного интеллекта. Ты
+                    узнаешь в чем разница между данными и информацией. А также что такое качество информации. Мы
+                    разберём, что такое алгоритмы, компьютерные программы и язык программирования Python, и начнём
+                    работать в интегрированной среде разработки для языка Python. Далее мы поймем суть переменных их
+                    свойства и типы. Именно с этой секции ты начнёшь писать свои первые программные коды на языке
+                    программирования Python. Мы изучим все аспекты этого удивительного языка. Далее мы разберём такие
+                    библиотеки как Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со средой разработки
+                    Jupyter Notebook.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>3</span> Введение в искусственный интеллект. </h3>
+                  <p class="module-description">
+                    Эта секция показывает нам, разницу между линейным и нелинейным программированием. Описывает процесс
+                    получение знаний. Также, ты узнаешь, в чем разница между AI, machine learning и deep learning. Также
+                    обсудим виды искусственного интеллекта, его применения и примеры.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>4</span> Введение в программирование</h3>
+                  <p class="module-description">
+                    Эта секция показывает нам, разницу между линейным и нелинейным программированием. Описывает процесс
+                    получение знаний. Также, ты узнаешь, в чем разница между AI, machine learning и deep learning. Также
+                    обсудим виды искусственного интеллекта, его применения и примеры.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>5</span> Алгоритм machine learning. </h3>
+                  <p class="module-description">
+                    В этих секциях, мы подробно разберём работу алгоритмов machine learning. И ты создашь очень простую,
+                    но уже свою модель искусственного интеллекта. Также ты научишься оценивать точность моделей. В этой
+                    секции мы подробно начнём разбирать одну из библиотек искусственного интеллекта scikit learn. Здесь
+                    же мы разберём другую среду разработки, которая называется spyder.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>6</span> Процесс разработки модели искусственного интеллекта и
+                    инженерия данных.
+                  </h3>
+                  <p class="module-description">
+                    Здесь мы подробно обсудим весь процесс разработки модели искусственного интеллекта. Также мы начнём
+                    изучение анализа данных и их обработки для обучения искусственного интеллекта. В этой секции я научу
+                    тебя практическим примерам анализа и обработки данных от А до Я.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>7</span> Отбор фичей. </h3>
+                  <p class="module-description">
+                    В этой секции из всех данных, что у нас есть, мы научимся отбирать только те, что нам нужны для
+                    обучения искусственного интеллекта.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>8</span> Чек лист почти для всех проектов искусственного интеллекта.
+                  </h3>
+                  <p class="module-description">
+                    В этой секции я дам чек лист действий для построения end-to-end проектов искусственного интеллекта.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>9</span> Практические занятия.</h3>
+                  <p class="module-description">
+                    На практических занятиях мы научим наши модели искусственного интеллекта следующим вещам:
+                    предсказывать нажатие на рекламу пользователем в фейсбуке; определять рак груди; предсказывать ухода
+                    в отставку клиентов банка; определять наличие кифоза у детей; определять положительные и
+                    отрицательные отзывы yelp; определять положительные и отрицательные отзывы на амазоне; определять
+                    спам письма; предсказывать наличие болезней сердца у пациентов; определять износ деталей на токарном
+                    станке.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>10</span> Deep learning: Искусственные нейронные сети. </h3>
+                  <p class="module-description">
+                    В этой секции ты узнаешь, что такое deep learning и как это работает, также ты поймешь, что такое
+                    нейроны и как нейроные сети обучаются. Мы детально разберём все процессы, связанные с нейронными
+                    сетями. Ты также познакомишься с библиотекой keras, фреймворком tensorflow и средой разработки
+                    google colab.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>11</span> Deep learning: конволюционные нейронные сети. </h3>
+                  <p class="module-description">
+                    Эта секция посвящена конволюционным нейронным сетям, которые применяются в компьютерном зрении. Мы
+                    детально разберём как искусственный интеллект распознает те или иные вещи, например, машины или
+                    яблоки.
+                  </p>
+                </div>
+                <div class="module">
+                  <h3 class="module-title"><span>12</span> Практические занятия. </h3>
+                  <p class="module-description">
+                    На этих занятиях ты разработаешь свои нейронные сети, которые смогут: предсказывать цены
+                    автомобилей; предсказывать выходную мощность электростанций (кейс виртуальных сенсоров);
+                    предсказывать поломки насоса на основе данных из сенсоров насоса; распознавать рукописные цифры,
+                    распознавать элементы одежды, распознавать различные объекты; распознавать повреждённые автомобили;
+                    распознавать уличные дорожные знаки для беспилотных автомобилей.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <div class="accordion__header-inner">
+
+                  <svg class="accordion__icon-arrow">
+                    <use href="sprites.svg#accordion__arow"></use>
+                  </svg>
+                  <p class="level-badge">
+                    AI - Senior Level.
+                    <span class="duration">Продолжительность 1.5 года.</span> <span class="development">В
+                      разработке</span>
+                  </p>
+                </div>
+                <div class="flip__container">
+                  <svg class="accordion__icon">
+                    <use href="sprites.svg#accordion__btn"></use>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+
+                <div class="accordion__header-inner">
+                  <svg class="accordion__icon-arrow">
+                    <use href="sprites.svg#accordion__arow"></use>
+                  </svg>
+
+                  <p class="level-badge">
+                    AI - Senior Level V2.0.
+                    <span class="duration"> Продолжительность 1.5 года.</span> <span class="development">В
+                      разработке</span>
+                  </p>
+                </div>
+
+                <div class="flip__container">
+                  <svg class="accordion__icon">
+                    <use href="sprites.svg#accordion__btn"></use>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button class="btn js-open-modal">Записаться на ознакомительный вебинар</button>
+        </div>
+      </div>
+    </section>
+    <section class="profile">
+      <div class="container">
+        <div class="profile__wrapper">
+          <h2 class="title profile__title">
+            Автор курса
+          </h2>
+          <div class="profile__content">
+            <p class="profile__text">Основателем курса является Владимир Ким, действующий и ведущий специалист в области
+              искусственного интеллекта в Южной Корее, который разрабатывал системы искусственного интеллекта для
+              компаний Samsung SDS, LG science park
+              и LG digital park.
+            </p>
+            <p class="profile__text">На данный момент, Владимир занимается разработкой виртуальных сенсоров на основе
+              нейронных сетей.</p>
+            <p class="profile__text">Является одним из авторов диссертации об обработке больших данных для
+              Южнокорейского института по развитию
+              Интернета.</p>
+            <p class="profile__text">Действующий член ассоциации разработчиков программного обеспечения в Южной Корее.
+            </p>
+            <p class="profile__text">Активно участвует в R&D проектах по внедрению искусственного интеллекта для
+              государственных предприятий
+              Южной Кореи.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="slider__info">
+          <h2 class="title slider__title">Объявления школы</h2>
+          <a href="#" class="title__link">Все объявления</a>
+        </div>
+
+        <div class="announcements-slider">
+          <div class="slider-container" id="slider1">
+
+            <div class="slide active">
+              <img src="/assets/slider-1.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span></p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+
+            <div class="slide">
+              <img src="/assets/slider-2.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span>
+              </p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+
+            <div class="slide">
+              <img src="/assets/slider-3.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span>
+              </p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+            <div class="slide">
+              <img src="/assets/slider-2.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span>
+              </p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+            <div class="slide">
+              <img src="/assets/slider-3.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span>
+              </p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+            <div class="slide">
+              <img src="/assets/slider-1.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span>
+              </p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+            <div class="slide">
+              <img src="/assets/slider-3.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span>
+              </p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+            <div class="slide">
+              <img src="/assets/slider-2.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span>
+              </p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+            <div class="slide">
+              <img src="/assets/slider-1.png" alt="" class="slider__pic">
+              <h3 class="slide-title">Заголовок объявления из нескольких слов</h3>
+              <p class="slide-text">Искусственный интеллект - это не одна дисциплина, как думают многие, а совокупность
+                различных <span>между</span>
+              </p>
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+          </div>
+
+
+          <div class="slider-dots" id="dots1">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+
+          <button class="slider-nav prev" id="prev1">&#8592;</button>
+          <button class="slider-nav next" id="next1">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="vacancies">
+      <div class="container">
+        <div class="slider__info">
+          <h2 class="title vacancies__title">Вакансии</h2>
+          <a href="#" class="title__link">Все объявления</a>
+        </div>
+
+        <div class="announcements-slider">
+          <div class="slider-container" id="slider2">
+
+            <div class="slide active vacancies__slide">
+              <img src="/assets/slider-4.png" alt="" class="slider__pic">
+              <h3 class="slide-title vacancies__info-slide">Требуется администратор</h3>
+
+              <div class="slide__wrapper">
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Опыт работы</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">от 1 года</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Образование</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">Высшее</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text span">Возраст</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points span">. . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . .</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text span">25-35 лет</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+
+            <div class="slide vacancies__slide">
+              <img src="/assets/slider-2_1.png" alt="" class="slider__pic">
+              <h3 class="slide-title vacancies__info-slide">Требуется администратор</h3>
+
+              <div class="slide__wrapper">
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Опыт работы</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">от 1 года</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Образование</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">Высшее</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text span">Возраст</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points span">. . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . .</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text span">25-35 лет</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+
+            <div class="slide vacancies__slide">
+              <img src="/assets/slider-2_3.png" alt="" class="slider__pic">
+              <h3 class="slide-title vacancies__info-slide">Требуется администратор</h3>
+
+              <div class="slide__wrapper">
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Опыт работы</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">от 1 года</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Образование</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">Высшее</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text span">Возраст</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points span">. . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . .</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text span">25-35 лет</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+
+            <div class="slide vacancies__slide">
+              <img src="/assets/slider-4.png" alt="" class="slider__pic">
+              <h3 class="slide-title vacancies__info-slide">Требуется администратор</h3>
+
+              <div class="slide__wrapper">
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Опыт работы</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">от 1 года</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Образование</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">Высшее</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text span">Возраст</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text span__points">. . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . .</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text span">25-35 лет</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+
+            <div class="slide vacancies__slide">
+              <img src="/assets/slider-2_1.png" alt="" class="slider__pic">
+              <h3 class="slide-title vacancies__info-slide">Требуется администратор</h3>
+
+              <div class="slide__wrapper">
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Опыт работы</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">от 1 года</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Образование</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">Высшее</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text span">Возраст</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points span">. . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . .</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text span">25-35 лет</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+
+            <div class="slide vacancies__slide">
+              <img src="/assets/slider-2_3.png" alt="" class="slider__pic">
+              <h3 class="slide-title vacancies__info-slide">Требуется администратор</h3>
+
+              <div class="slide__wrapper">
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Опыт работы</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">от 1 года</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text">Образование</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points">. . . . . . . . . . . . . . . . . . . . . . . . . . .
+                    </p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text">Высшее</p>
+                  </div>
+                </div>
+
+                <div class="slide__wrapper-content">
+                  <div>
+                    <p class="slide-text vacancies-text span">Возраст</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text__points span">. . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . .</p>
+                  </div>
+                  <div>
+                    <p class="slide-text vacancies-text span">25-35 лет</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#" class="read-more">Подробнее</a>
+            </div>
+
+          </div>
+
+
+          <div class="slider-dots" id="dots2">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+
+          <button class="slider-nav prev" id="prev2">&#8592;</button>
+          <button class="slider-nav next" id="next2">&#8594;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__btn" id="scrollBtn">
+      <p>Подняться вверх</p>
+      <img src="/assets/arrow__up.png" alt="" class="footer__pic">
+    </div>
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="#" class="footer__link">
+          <img src="/assets/logo.png" alt=""></a>
+
+        <div class="footer__info">
+          <div class="footer__contact">
+
+            <a class="footer__mail" href="mailto:veravlaedu@gmail.com ">
+              <svg class="footer__icon">
+                <use href="sprites.svg#mail__footer"></use>
+              </svg>veravlaedu@gmail.com</a>
+            <a class="header__phone" href="tel:+821075269192">
+              <svg class="phone__icon">
+                <use href="sprites.svg#header__phone"></use>
+              </svg>+ 82 (10) 7526-9192</a>
+          </div>
+          <div class="footer__social">
+            <p>Мы в соц сетях</p>
+            <div class="footer__social-links">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use href="sprites.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use href="sprites.svg#messanger"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use href="sprites.svg#youtube"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use href="sprites.svg#whatsapp"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use href="sprites.svg#cacao"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__divaider">
+      <div class="footer__line"></div>
+      <p class="footer__copy">Copyright © 2025 VeraVla edu. All rights reserved
+      </p>
+      <div class="footer__line"></div>
+    </div>
+    <div class="container">
+      <div class="footer__dev">
+        <p>developed by A.Vaschilin</p>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,241 @@
+.header {
+    background-image: url(/assets/bg.png);
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 24px 0 24px 0 #00e0ff,
+        0 4px 15px 0 #4ad9ec,
+        0 3px 15px 0 rgba(0, 224, 255, 0.93);
+    min-height: 100vh;
+}
+
+.header__wrapper {
+    padding: 37px 0 90px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.phone__icon {
+    width: 25px;
+    height: 25px;
+}
+
+.header__consultation {
+    position: absolute;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 139px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.header__consultation p {
+    font-family: var(--font-family);
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-weight: 500;
+    text-align: center;
+    color: var(--light-blue);
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+}
+
+.header__inner {
+    margin-top: 155px;
+    display: flex;
+    flex-direction: column;
+    max-width: 806px;
+}
+
+.header__subtitle {
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.header__title {
+    margin-top: 23px;
+    font-weight: 600;
+    font-size: 108px;
+    background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+}
+
+.header__text {
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.header__info {
+    max-width: 576px;
+    margin-top: 77px;
+    display: flex;
+    gap: 33px;
+}
+
+.header__info-pic {
+    width: 71px;
+    height: 71px;
+    object-fit: contain;
+}
+
+.header__info-title {
+    font-weight: 600;
+}
+
+.header__info-text {
+    margin-top: 20px;
+    color: var(--blue);
+}
+
+.header__btn-wrapper {
+    margin-bottom: 90px;
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    gap: 111px;
+}
+
+.header__btn {
+    padding: 23px 35px;
+    width: 100%;
+    max-width: 480px;
+    height: 60px;
+    border-radius: 9px;
+    box-shadow: 0 7px 20px -7px #00e0ff;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.header__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 25px -5px #00e0ff;
+}
+
+.scroll-down-btn {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.scroll-down-btn p {
+    letter-spacing: 2px;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: var(--grey);
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 0;
+}
+
+@media (max-width: 1600px) {
+    .header__consultation p {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .header__title {
+        font-size: 72px;
+    }
+
+    .header__consultation {
+        left: 30px;
+    }
+
+    .header__inner {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header__top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header__consultation {
+        position: static;
+        flex-direction: row;
+        width: auto;
+        padding: 20px 0;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .header__consultation-png {
+        pointer-events: auto;
+    }
+
+    .header__inner {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    .header__title {
+        font-size: 48px;
+        margin-top: 15px;
+        line-height: 1.2;
+    }
+
+    .header__text {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .header__info {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .header__btn-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .header__btn {
+        width: 100%;
+        max-width: none;
+        padding: 15px;
+        font-size: 14px;
+        height: auto;
+    }
+
+    .scroll-down-btn {
+        display: none;
+    }
+}

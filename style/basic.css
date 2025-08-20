@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Avenir Next Cyr", sans-serif;
+    src:
+        url("/font/AvenirNextCyr-Demi.woff") format("woff2"),
+        url("/font/AvenirNextCyr-Medium.woff") format("woff");
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* Убирает горизонтальный скролл */
+    width: 100%;
+    /* Фиксирует ширину */
+}
+
+html {
+    /* плавный скрол */
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: var(--white);
+    background: linear-gradient(135deg, #000000 0%, #022335 50%, #003730 100%);
+
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 0 10px;
+
+}
+
+
+.none {
+    display: none;
+}

@@ -1,0 +1,180 @@
+.ai__section {
+    padding: 177px 0 72px;
+    background: 
+        url(/assets/ai-1.png) center/cover no-repeat;
+    box-shadow: 0 0 24px 0 #00e0ff, 
+                0 4px 15px 0 #4ad9ec, 
+                0 3px 15px 0 rgba(0, 224, 255, 0.93);
+    transition: all 0.5s ease; /* Плавные изменения */
+}
+
+.ai__section:hover {
+    box-shadow: 0 0 32px 0 #00e0ff, 
+                0 6px 25px 0 #4ad9ec, 
+                0 5px 25px 0 rgba(0, 224, 255, 0.93);
+}
+
+.ai__content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    max-width: 776px;
+}
+
+.ai__title {
+    font-weight: 500;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: var(--blue);
+    line-height: 1.2;
+    transition: color 0.3s ease;
+}
+
+.ai__title:hover {
+    color: var(--light-blue); /* Изменение цвета при наведении */
+}
+
+.ai__title span {
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.ai__title:hover span {
+    color: var(--light-grey);
+}
+
+.ai__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Увеличил промежуток между элементами */
+}
+
+.ai__item {
+    display: flex;
+    align-items: center;
+    padding: 20px 56px 20px 24px;
+    font-weight: 500;
+    font-size: 15px;
+    background: linear-gradient(90deg, rgba(31, 63, 77, 0.54) 0%, rgba(31, 75, 94, 0) 100%);
+    border-radius: 8px; /* Добавил скругление углов */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.ai__item:hover {
+    transform: translateX(10px); /* Сдвиг при наведении */
+    background: linear-gradient(90deg, rgba(41, 83, 97, 0.7) 0%, rgba(41, 95, 114, 0.2) 100%);
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.5);
+}
+
+.ai__item::before {
+    content: url(/assets/ai__icon.png);
+    padding-right: 19px;
+    transition: transform 0.3s ease;
+}
+
+.ai__item:hover::before {
+    transform: scale(1.1); /* Увеличение иконки */
+}
+
+.btn {
+    max-width: 479px;
+    margin-top: 15px; /* Увеличил отступ */
+    padding: 22px 13px 25px;
+    font-weight: 750;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 7px 20px -7px #00e0ff;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px -5px #00e0ff;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.btn:hover::after {
+    left: 100%;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+    .ai__section {
+        padding: 120px 0 60px;
+    }
+    
+    .ai__title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ai__section {
+        padding: 80px 0 40px;
+        background-position: 60% center;
+    }
+    
+    .ai__content {
+        gap: 40px;
+    }
+    
+    .ai__title {
+        font-size: 32px;
+    }
+    
+    .ai__item {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        max-width: 100%;
+        padding: 18px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ai__section {
+        padding: 60px 0 30px;
+    }
+    
+    .ai__title {
+        font-size: 24px;
+    }
+    
+    .ai__item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 15px;
+    }
+    
+    .ai__item::before {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+    
+    .btn {
+        font-size: 11px;
+        letter-spacing: 0.1em;
+    }
+}

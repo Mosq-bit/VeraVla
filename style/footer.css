@@ -1,0 +1,192 @@
+.footer {
+    position: relative;
+    padding: 67px 23px;
+    box-shadow: 0 0 24px 0 #00e0ff, 0 4px 15px 0 #4ad9ec, 0 3px 15px 0 rgba(0, 224, 255, 0.93);
+    background: linear-gradient(313deg, #022335 0%, #043a41 100%);
+
+}
+
+
+
+.footer__btn {
+    position: absolute;
+    top: -68%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    cursor: pointer;
+
+    p {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+
+        font-weight: 600;
+        font-size: 10px;
+        letter-spacing: 0.36em;
+        text-transform: uppercase;
+        color: var(--light-blue);
+    }
+
+}
+
+.footer__pic {}
+
+
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer__link {}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.footer__contact {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.footer__icon {
+    width: 30px;
+    height: 30px;
+}
+
+a.footer__mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: right;
+    color: var(--blue);
+}
+
+.footer__social {
+    margin-left: 150px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.footer__social p {
+
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #747d81;
+}
+
+.footer__social-links {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+}
+
+.footer__social-link {}
+
+
+.footer__divaider {
+    margin-top: 44px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        background: linear-gradient(180deg, #fff 65.96%, rgba(105, 104, 104, 0) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.footer__line {
+    border: 1px solid rgba(0, 224, 255, 0.2);
+    width: 784px;
+    height: 0px;
+}
+
+.footer__copy {}
+
+.footer__dev {
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: end;
+
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #747d81;
+}
+
+@media (max-width: 768px) {
+    /* Для планшетов и мобильных устройств */
+
+    .footer {
+        padding: 40px 15px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer__contact {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer__social {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer__line {
+        width: 100%;
+        /* растянуть линию на всю ширину */
+    }
+
+    /* Можно изменить размеры иконок */
+    .footer__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Текстовые элементы */
+    a.footer__mail {
+        font-size: 16px;
+        /* чуть больше для удобства */
+    }
+
+    /* Положение кнопки */
+    .footer__btn {
+        top: -16%;
+    }
+
+    .footer__btn p {
+        display: none;
+    }
+}

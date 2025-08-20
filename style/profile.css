@@ -1,0 +1,127 @@
+.profile {
+    padding: 100px 0 110px;
+    background-image: url(/assets/specialist.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 24px 0 #00e0ff, 
+              0 4px 15px 0 #4ad9ec, 
+              0 3px 15px 0 rgba(0, 224, 255, 0.93);
+}
+
+
+.profile__wrapper {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 107px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile__title {
+    color: var(--white);
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.profile__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.profile__signature {
+    font-weight: 600;
+    font-size: 18px;
+    color: #00e0ff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile__signature span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 992px) {
+    .profile {
+        padding: 80px 0;
+    }
+    
+    .profile__wrapper {
+        gap: 80px;
+    }
+    
+    .profile__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile {
+        padding: 60px 0;
+        background-position: 60% center;
+    }
+    
+    .profile__wrapper {
+        gap: 60px;
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    
+    .profile__content {
+        gap: 40px;
+    }
+    
+    .profile__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile {
+        padding: 50px 0;
+    }
+    
+    .profile__title {
+        font-size: 30px;
+    }
+    
+    .profile__wrapper {
+        gap: 50px;
+        padding: 0 20px;
+    }
+    
+    .profile__content {
+        gap: 30px;
+    }
+    
+    .profile__signature {
+        font-size: 16px;
+    }
+    
+    .profile__signature span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile__title {
+        font-size: 26px;
+    }
+    
+    .profile__text {
+        font-size: 13px;
+    }
+}

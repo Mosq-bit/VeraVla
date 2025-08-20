@@ -1,0 +1,205 @@
+.learning-program {
+    padding: 103px 0 109px;
+
+    background: linear-gradient(313deg, rgba(2, 35, 53, 0.8) 0%, rgba(12, 55, 61, 0.8) 100%);
+}
+
+.learning-program__wrapper {}
+
+.subtitle {
+    margin: 86px 0 27px;
+}
+
+.accordion {
+    margin-bottom: 59px;
+}
+
+.accordion-item {
+    margin-bottom: 16px;
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px 15px 18px 17px;
+    border-radius: 6px;
+    background: linear-gradient(313deg, #073447 0%, #08262b 100%);
+}
+
+.accordion__header-inner{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.accordion__icon-arrow {
+    width: 26px;
+    height: 26px;
+
+}
+
+
+
+.level-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 750;
+    font-size: 20px;
+}
+
+.duration {
+    font-weight: 500;
+    font-size: 15px;
+    color: #08b1b9;
+}
+
+.flip__container{
+   cursor: pointer;
+
+}
+.accordion__icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease; 
+}
+
+.flip__container--flipped .accordion__icon {
+  transform: rotate(180deg); /* Поворот на 180° */
+  /* Или transform: scaleX(-1); для зеркального отражения */
+}
+
+.accordion-content {
+    margin: 34px 0 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.module {}
+
+.module-title {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    font-weight: 750;
+    font-size: 16px;
+    line-height: 131%;
+    color: #4abcec;
+}
+
+.module-title span {
+    padding-top: 4px;
+    width: 27px;
+    height: 27px;
+    font-weight: 750;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #08262b;
+
+    border-radius: 100%;
+    background-color: #4abcec;
+}
+
+.development {
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #08262b;
+
+    background: #00e0ff;
+}
+
+.module-description {
+
+    margin: 14px 0 0 46px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 131%;
+}
+
+@media (max-width: 992px) {
+    .learning-program {
+        padding: 80px 0;
+    }
+
+    .subtitle {
+        margin: 60px 0 25px;
+        font-size: 36px;
+    }
+
+    .level-badge {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .learning-program {
+        padding: 60px 0;
+    }
+
+    .subtitle {
+        margin: 40px 0 20px;
+        font-size: 30px;
+    }
+
+    .accordion-header {
+        padding: 10px 13px;
+    }
+
+    .level-badge {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .module-title {
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    .module-description {
+        margin-left: 42px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .subtitle {
+        font-size: 26px;
+    }
+
+    .level-badge {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .duration {
+        font-size: 13px;
+    }
+
+    .module-title span:first-child {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .development {
+        font-size: 10px;
+    }
+
+    .accordion-content {
+        margin: 20px 0 40px !important;
+    }
+}
