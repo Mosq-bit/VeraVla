@@ -1,7 +1,7 @@
 .ai__section {
     padding: 177px 0 72px;
     background: 
-        url(/assets/ai-1.png) center/cover no-repeat;
+        url(/VeraVla/assets/ai-1.png) center/cover no-repeat;
     box-shadow: 0 0 24px 0 #00e0ff, 
                 0 4px 15px 0 #4ad9ec, 
                 0 3px 15px 0 rgba(0, 224, 255, 0.93);
@@ -177,4 +177,5 @@
         font-size: 11px;
         letter-spacing: 0.1em;
     }
+
 }
