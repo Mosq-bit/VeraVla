@@ -4,7 +4,11 @@
     background: linear-gradient(313deg, rgba(2, 35, 53, 0.8) 0%, rgba(12, 55, 61, 0.8) 100%);
 }
 
-.learning-program__wrapper {}
+.learning-program__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
 
 .subtitle {
     margin: 86px 0 27px;
@@ -202,4 +206,5 @@
     .accordion-content {
         margin: 20px 0 40px !important;
     }
+
 }
